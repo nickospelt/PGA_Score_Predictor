@@ -35,7 +35,7 @@ def get_weather_data(city, start_date, end_date):
     }
     response = requests.get(url, params=params)
     weather_data = response.json()
-    print(f"Weather API Results: {weather_data}")
+    print(f"Weather API Results [{city}]:\n {weather_data}\n")
 
     date = weather_data['daily']['time']
     temperature = weather_data['daily']['temperature_2m_mean']

@@ -1,0 +1,7 @@
+from Tournament_Result_Scraping import scrape_tournament_results
+from Merge_Tournament_Results_Player_Data import aggregate_player_and_tournament_data
+
+
+# All relevant player Statistics must be in the correct tournament folder before running this script
+scrape_tournament_results()
+aggregate_player_and_tournament_data()
