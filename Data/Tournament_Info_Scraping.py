@@ -44,7 +44,8 @@ def convert_dates(raw_date):
 
 # 2024 FedEx St.Jude Championship - 401580364
 # 2024 The Sentry - 401580329
-url = "https://www.espn.com/golf/leaderboard?tournamentId=401580364"
+# 2022 Fortinet Championship - 401465496
+url = "https://www.espn.com/golf/leaderboard?tournamentId=401465496"
 browser = webdriver.Chrome()
 result = browser.get(url)
 browser.implicitly_wait(5)
@@ -75,7 +76,6 @@ player_rows = soup.find_all('tr', attrs={"class": "PlayerRow__Overview PlayerRow
 player_count = 0
 player_results = []
 for player_row in player_rows:
-    player_count += 1
     player_info = player_row.find_all('td', attrs={"class": "Table__TD"})
 
     player_name = player_info[2].text
@@ -85,21 +85,32 @@ for player_row in player_rows:
     r3_score = player_info[6].text
     r4_score = player_info[7].text
     total_score = player_info[8].text
-    average_score += int(total_score) / 4
 
-    # Create a record for each round that each player played
-    round_1_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[0], "ELEVATION": elevation, "TEMPERATURE": temperature[0], "PRECIPITATION": precipitation[0], "WIND_SPEED": wind_speed[0], "WIND_DIRECTION": wind_direction[0], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r1_score, "TOTAL_SCORE": total_score}
-    round_2_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[1], "ELEVATION": elevation, "TEMPERATURE": temperature[1], "PRECIPITATION": precipitation[1], "WIND_SPEED": wind_speed[1], "WIND_DIRECTION": wind_direction[1], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r2_score, "TOTAL_SCORE": total_score}
-    round_3_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[2], "ELEVATION": elevation, "TEMPERATURE": temperature[2], "PRECIPITATION": precipitation[2], "WIND_SPEED": wind_speed[2], "WIND_DIRECTION": wind_direction[2], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r3_score, "TOTAL_SCORE": total_score}
-    round_4_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[3], "ELEVATION": elevation, "TEMPERATURE": temperature[3], "PRECIPITATION": precipitation[3], "WIND_SPEED": wind_speed[3], "WIND_DIRECTION": wind_direction[3], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r4_score, "TOTAL_SCORE": total_score}
+    average_score = 0
+    # Handle round information of players that played first two rounds but did not make the cut
+    if player_score != 'WD' and r3_score == '--':
+        round_1_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[0], "ELEVATION": elevation, "TEMPERATURE": temperature[0], "PRECIPITATION": precipitation[0], "WIND_SPEED": wind_speed[0], "WIND_DIRECTION": wind_direction[0], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r1_score, "TOTAL_SCORE": total_score}
+        round_2_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[1], "ELEVATION": elevation, "TEMPERATURE": temperature[1], "PRECIPITATION": precipitation[1], "WIND_SPEED": wind_speed[1], "WIND_DIRECTION": wind_direction[1], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r2_score, "TOTAL_SCORE": total_score}
+        
+        player_count += 1
+        average_score += int(total_score) / 2
 
-    # print(f"player_name: {player_name}, player_score: {player_score}, r1_score: {r1_score}, r2_score: {r2_score}, r3_score: {r3_score}, r4_score: {r4_score}, total_score: {total_score}")
-    # player_info = {"TOURNAMENT_NAME": tournament_name, "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE_TO_PAR": player_score, "ROUND_1_SCORE": r1_score, "ROUND_2_SCORE": r2_score, "ROUND_3_SCORE": r3_score, "ROUND_4_SCORE": r4_score, "TOTAL_SCORE": total_score}
-    
-    player_results.append(round_1_info)
-    player_results.append(round_2_info)
-    player_results.append(round_3_info)
-    player_results.append(round_4_info)
+        player_results.append(round_1_info)
+        player_results.append(round_2_info)
+    # Handle round information of players that played all four rounds, or in other words made the cut
+    elif player_score != 'WD':
+        round_1_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[0], "ELEVATION": elevation, "TEMPERATURE": temperature[0], "PRECIPITATION": precipitation[0], "WIND_SPEED": wind_speed[0], "WIND_DIRECTION": wind_direction[0], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r1_score, "TOTAL_SCORE": total_score}
+        round_2_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[1], "ELEVATION": elevation, "TEMPERATURE": temperature[1], "PRECIPITATION": precipitation[1], "WIND_SPEED": wind_speed[1], "WIND_DIRECTION": wind_direction[1], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r2_score, "TOTAL_SCORE": total_score}
+        round_3_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[2], "ELEVATION": elevation, "TEMPERATURE": temperature[2], "PRECIPITATION": precipitation[2], "WIND_SPEED": wind_speed[2], "WIND_DIRECTION": wind_direction[2], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r3_score, "TOTAL_SCORE": total_score}
+        round_4_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[3], "ELEVATION": elevation, "TEMPERATURE": temperature[3], "PRECIPITATION": precipitation[3], "WIND_SPEED": wind_speed[3], "WIND_DIRECTION": wind_direction[3], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r4_score, "TOTAL_SCORE": total_score}
+
+        player_count += 1
+        average_score += int(total_score) / 4
+
+        player_results.append(round_1_info)
+        player_results.append(round_2_info)
+        player_results.append(round_3_info)
+        player_results.append(round_4_info)
 
 # course rating calculation (pga tour avg +5.4 handicap, giving an extra stroke compared to normal scratch golfers) (rating should be on average what a 0 handicap would shoot)
 average_score /= player_count
