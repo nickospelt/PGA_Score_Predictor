@@ -46,9 +46,12 @@ def aggregate_player_and_tournament_data():
         main_player_data_df['TOURNAMENT_NAME'] = tournament_result_csv.replace('.csv', '')
         main_player_data_df = main_player_data_df[['PLAYER_ID', 'PLAYER_NAME', 'TOURNAMENT_NAME', 'GIR_PERCENTAGE', 'BIRDIE_TO_BOGEY_RATIO', 'AVG_TOTAL_DRIVING_DISTANCE', 'FIR_PERCENTAGE', 'SCORING_AVERAGE', 'SCRAMBLING_PERCENTAGE', 'AVG_THREE_PUTTS_PER_ROUND', 'AVG_PUTTS_PER_ROUND']]
 
+        # print and save the aggregated player data for the respective tournament
         print(f"Player Stats for {tournament_result_csv.replace('.csv', '')}:")
         print(main_player_data_df)
         print('\n')
+        player_data_path = os.path.join(main_dir, f"Player_Data/{tournament_result_csv.replace('.csv', '')}")
+        main_player_data_df.to_csv(f"{os.path.join(player_data_path, 'main_player_data.csv')}", index=False)
 
         tournament_player_data_df = pd.merge(main_player_data_df, tournament_result_df, on=['PLAYER_NAME', 'TOURNAMENT_NAME']).sort_values(by='TOTAL_SCORE', ascending=FALSE).reset_index(drop=True)
         tournament_player_data_df = tournament_player_data_df[["TOURNAMENT_NAME", "ROUND_DATE", "ELEVATION", "TEMPERATURE", "PRECIPITATION", "WIND_SPEED", "WIND_DIRECTION", "COURSE_NAME", "COURSE_LOCATION", "PAR", "LENGTH", "COURSE_AVERAGE_SCORE", 'PLAYER_ID', 'PLAYER_NAME', 'GIR_PERCENTAGE', 
