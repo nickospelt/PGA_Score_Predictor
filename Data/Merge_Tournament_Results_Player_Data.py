@@ -7,7 +7,7 @@ def aggregate_player_and_tournament_data():
     main_dir = os.path.dirname(__file__)
 
     # list of all the tournament_player_data to be aggregated into final large data set
-    master_tournament_player_data_df = pd.DataFrame(columns=["TOURNAMENT_NAME", "ROUND_DATE", "ELEVATION", "TEMPERATURE", "PRECIPITATION", "WIND_SPEED", "WIND_DIRECTION", "COURSE_NAME", "COURSE_LOCATION", "PAR", "LENGTH", "COURSE_AVERAGE_SCORE", 'PLAYER_ID', 'PLAYER_NAME', 'GIR_PERCENTAGE', 
+    master_tournament_player_data_df = pd.DataFrame(columns=["TOURNAMENT_NAME", "ROUND_DATE", "ROUND_NUMBER", "ELEVATION", "TEMPERATURE", "PRECIPITATION", "WIND_SPEED", "WIND_DIRECTION", "COURSE_NAME", "COURSE_LOCATION", "PAR", "LENGTH", "COURSE_AVERAGE_SCORE", 'PLAYER_ID', 'PLAYER_NAME', 'GIR_PERCENTAGE', 
     'BIRDIE_TO_BOGEY_RATIO', 'AVG_TOTAL_DRIVING_DISTANCE', 'FIR_PERCENTAGE', 'SCORING_AVERAGE', 'SCRAMBLING_PERCENTAGE', 'AVG_THREE_PUTTS_PER_ROUND', 'AVG_PUTTS_PER_ROUND', 
     "SCORE", "TOTAL_SCORE"])
 
@@ -47,23 +47,24 @@ def aggregate_player_and_tournament_data():
         main_player_data_df = main_player_data_df[['PLAYER_ID', 'PLAYER_NAME', 'TOURNAMENT_NAME', 'GIR_PERCENTAGE', 'BIRDIE_TO_BOGEY_RATIO', 'AVG_TOTAL_DRIVING_DISTANCE', 'FIR_PERCENTAGE', 'SCORING_AVERAGE', 'SCRAMBLING_PERCENTAGE', 'AVG_THREE_PUTTS_PER_ROUND', 'AVG_PUTTS_PER_ROUND']]
 
         # print and save the aggregated player data for the respective tournament
-        print(f"Player Stats for {tournament_result_csv.replace('.csv', '')}:")
+        print(f"{tournament_result_csv.replace('.csv', '')} Player Stats Dataframe:")
         print(main_player_data_df)
         print('\n')
         player_data_path = os.path.join(main_dir, f"Player_Data/{tournament_result_csv.replace('.csv', '')}")
         main_player_data_df.to_csv(f"{os.path.join(player_data_path, 'main_player_data.csv')}", index=False)
 
         tournament_player_data_df = pd.merge(main_player_data_df, tournament_result_df, on=['PLAYER_NAME', 'TOURNAMENT_NAME']).sort_values(by='TOTAL_SCORE', ascending=FALSE).reset_index(drop=True)
-        tournament_player_data_df = tournament_player_data_df[["TOURNAMENT_NAME", "ROUND_DATE", "ELEVATION", "TEMPERATURE", "PRECIPITATION", "WIND_SPEED", "WIND_DIRECTION", "COURSE_NAME", "COURSE_LOCATION", "PAR", "LENGTH", "COURSE_AVERAGE_SCORE", 'PLAYER_ID', 'PLAYER_NAME', 'GIR_PERCENTAGE', 
+        tournament_player_data_df = tournament_player_data_df[["TOURNAMENT_NAME", "ROUND_DATE", "ROUND_NUMBER", "ELEVATION", "TEMPERATURE", "PRECIPITATION", "WIND_SPEED", "WIND_DIRECTION", "COURSE_NAME", "COURSE_LOCATION", "PAR", "LENGTH", "COURSE_AVERAGE_SCORE", 'PLAYER_ID', 'PLAYER_NAME', 'GIR_PERCENTAGE', 
     'BIRDIE_TO_BOGEY_RATIO', 'AVG_TOTAL_DRIVING_DISTANCE', 'FIR_PERCENTAGE', 'SCORING_AVERAGE', 'SCRAMBLING_PERCENTAGE', 'AVG_THREE_PUTTS_PER_ROUND', 'AVG_PUTTS_PER_ROUND', "SCORE", "TOTAL_SCORE"]]
 
-        print(f"Final Dataframe for {tournament_result_csv.replace('.csv', '')}")
+        print(f"{tournament_result_csv.replace('.csv', '')} Final Dataframe:")
         print(tournament_player_data_df)
         print('\n')
 
         # add to the master dataset
         master_tournament_player_data_df = master_tournament_player_data_df.append(tournament_player_data_df).sort_values(by=['TOURNAMENT_NAME', 'TOTAL_SCORE', 'PLAYER_NAME', 'ROUND_DATE'], ascending=['FALSE', 'TRUE', 'TRUE', 'FALSE']).reset_index(drop=True)
 
+    print(f"Master Dataframe:")
     print(master_tournament_player_data_df)
     master_tournament_player_data_df.to_csv(f"{os.path.join(main_dir, 'master_pga_dataset.csv')}", index=False)
 

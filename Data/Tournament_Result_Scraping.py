@@ -93,8 +93,8 @@ def scrape_tournament_results():
 
             # Handle round information of players that played first two rounds but did not make the cut
             if player_score != 'WD' and r3_score == '--':
-                round_1_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[0], "ELEVATION": elevation, "TEMPERATURE": temperature[0], "PRECIPITATION": precipitation[0], "WIND_SPEED": wind_speed[0], "WIND_DIRECTION": wind_direction[0], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r1_score, "TOTAL_SCORE": total_score}
-                round_2_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[1], "ELEVATION": elevation, "TEMPERATURE": temperature[1], "PRECIPITATION": precipitation[1], "WIND_SPEED": wind_speed[1], "WIND_DIRECTION": wind_direction[1], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r2_score, "TOTAL_SCORE": total_score}
+                round_1_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[0], "ROUND_NUMBER": 1, "ELEVATION": elevation, "TEMPERATURE": temperature[0], "PRECIPITATION": precipitation[0], "WIND_SPEED": wind_speed[0], "WIND_DIRECTION": wind_direction[0], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r1_score, "TOTAL_SCORE": total_score}
+                round_2_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[1], "ROUND_NUMBER": 2, "ELEVATION": elevation, "TEMPERATURE": temperature[1], "PRECIPITATION": precipitation[1], "WIND_SPEED": wind_speed[1], "WIND_DIRECTION": wind_direction[1], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r2_score, "TOTAL_SCORE": total_score}
                 
                 player_count += 1
                 average_score += int(total_score) / 2
@@ -103,10 +103,10 @@ def scrape_tournament_results():
                 player_results.append(round_2_info)
             # Handle round information of players that played all four rounds, or in other words made the cut
             elif player_score != 'WD':
-                round_1_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[0], "ELEVATION": elevation, "TEMPERATURE": temperature[0], "PRECIPITATION": precipitation[0], "WIND_SPEED": wind_speed[0], "WIND_DIRECTION": wind_direction[0], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r1_score, "TOTAL_SCORE": total_score}
-                round_2_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[1], "ELEVATION": elevation, "TEMPERATURE": temperature[1], "PRECIPITATION": precipitation[1], "WIND_SPEED": wind_speed[1], "WIND_DIRECTION": wind_direction[1], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r2_score, "TOTAL_SCORE": total_score}
-                round_3_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[2], "ELEVATION": elevation, "TEMPERATURE": temperature[2], "PRECIPITATION": precipitation[2], "WIND_SPEED": wind_speed[2], "WIND_DIRECTION": wind_direction[2], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r3_score, "TOTAL_SCORE": total_score}
-                round_4_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[3], "ELEVATION": elevation, "TEMPERATURE": temperature[3], "PRECIPITATION": precipitation[3], "WIND_SPEED": wind_speed[3], "WIND_DIRECTION": wind_direction[3], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r4_score, "TOTAL_SCORE": total_score}
+                round_1_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[0], "ROUND_NUMBER": 1, "ELEVATION": elevation, "TEMPERATURE": temperature[0], "PRECIPITATION": precipitation[0], "WIND_SPEED": wind_speed[0], "WIND_DIRECTION": wind_direction[0], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r1_score, "TOTAL_SCORE": total_score}
+                round_2_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[1], "ROUND_NUMBER": 2, "ELEVATION": elevation, "TEMPERATURE": temperature[1], "PRECIPITATION": precipitation[1], "WIND_SPEED": wind_speed[1], "WIND_DIRECTION": wind_direction[1], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r2_score, "TOTAL_SCORE": total_score}
+                round_3_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[2], "ROUND_NUMBER": 3, "ELEVATION": elevation, "TEMPERATURE": temperature[2], "PRECIPITATION": precipitation[2], "WIND_SPEED": wind_speed[2], "WIND_DIRECTION": wind_direction[2], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r3_score, "TOTAL_SCORE": total_score}
+                round_4_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[3], "ROUND_NUMBER": 4, "ELEVATION": elevation, "TEMPERATURE": temperature[3], "PRECIPITATION": precipitation[3], "WIND_SPEED": wind_speed[3], "WIND_DIRECTION": wind_direction[3], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r4_score, "TOTAL_SCORE": total_score}
 
                 player_count += 1
                 average_score += int(total_score) / 4
@@ -123,7 +123,7 @@ def scrape_tournament_results():
         # print(f"Tournament Name: {tournament_name}, Par: {par}, length: {length}, course rating: {course_rating}")
 
         # create dataframe
-        tournament_information = pd.DataFrame(player_results, columns=["TOURNAMENT_NAME", "ROUND_DATE", "ELEVATION", "TEMPERATURE", "PRECIPITATION", "WIND_SPEED", "WIND_DIRECTION", "COURSE_NAME", "COURSE_LOCATION", "PLAYER_NAME", "PAR", "LENGTH", "COURSE_AVERAGE_SCORE", "SCORE", "TOTAL_SCORE"])
+        tournament_information = pd.DataFrame(player_results, columns=["TOURNAMENT_NAME", "ROUND_DATE", "ROUND_NUMBER", "ELEVATION", "TEMPERATURE", "PRECIPITATION", "WIND_SPEED", "WIND_DIRECTION", "COURSE_NAME", "COURSE_LOCATION", "PLAYER_NAME", "PAR", "LENGTH", "COURSE_AVERAGE_SCORE", "SCORE", "TOTAL_SCORE"])
         tournament_information["COURSE_AVERAGE_SCORE"] = average_score
         tournament_information["COURSE_NAME"] = course_name
         tournament_information["COURSE_LOCATION"] = course_location
@@ -131,7 +131,7 @@ def scrape_tournament_results():
         # save dataframe
         tournament_information.to_csv(f'Data/Tournament_Results/{tournament_name}.csv', index=False)
 
-        print(f"{tournament_name} datafame:")
+        print(f"{tournament_name} Results Datafame:")
         print(tournament_information)
         print('\n')
 
