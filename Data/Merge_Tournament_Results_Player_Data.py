@@ -6,7 +6,7 @@ import pandas as pd
 def format_prox_to_hole(value):
     feet = int(value.split("'")[0])
     inch = int(value.split("\"")[0].split(" ")[1])
-    return feet + (inch / 12)
+    return round(feet + (inch / 12), 4)
 
 # Aggregate all player statistics for each individual player. Join that data with how each player played at the respective tournament
 def aggregate_player_and_tournament_data():
