@@ -59,7 +59,14 @@ def scrape_tournament_results():
         # Get tournament and course information
         tournament_date = soup.find('span', class_="Leaderboard__Event__Date n7").text
         year = tournament_date.split(', ')[1]
-        tournament_name = year + " " + soup.find('h1', class_="headline headline__h1 Leaderboard__Event__Title").text
+
+        raw_tournament_name = soup.find('h1', class_="headline headline__h1 Leaderboard__Event__Title").text
+        tournament_name = ""
+        if raw_tournament_name != '2021 Masters Tournament' and raw_tournament_name != '2019 Masters Tournament' and raw_tournament_name != '2018 Masters Tournament':
+            tournament_name = year + " " + soup.find('h1', class_="headline headline__h1 Leaderboard__Event__Title").text
+        else:
+            tournament_name = raw_tournament_name
+        
         location_info = soup.find('div', class_="Leaderboard__Course__Location n8 clr-gray-04").text.split(' - ')
         course_name = location_info[0]
         course_location = location_info[1]
