@@ -42,10 +42,10 @@ def convert_dates(raw_date):
 
 # Scrapes all necessary tournament results from espn's website
 def scrape_tournament_results():
-    # 2024 The Sentry - 401580329
+    # 2023: Open - 401465539, U.S. Open - 401465533, PGA Championship - 401465523, Masters - 401465508, Players - 401465526
     # 2022 Fortinet Championship - 401465496
 
-    tournament_ids = [401580329, 401465496]
+    tournament_ids = [401465539, 401465533, 401465523, 401465508, 401465526]
 
     for id in tournament_ids:
         url = f"https://www.espn.com/golf/leaderboard?tournamentId={id}"
