@@ -45,10 +45,12 @@ def scrape_tournament_results():
     # 2023: Open - 401465539, U.S. Open - 401465533, PGA Championship - 401465523, Masters - 401465508, Players - 401465526
     # 2022: Open - 401353217, U.S. Open - 401353222, PGA Championship - 401353226, Masters - 401353232, Players - 401353254
     # 2021: Open - 401243410, U.S. Open - 401243414, PGA Championship - 401243418, Masters - 401243010, Players - 401243005
+    # 2019: Open - 401056547, U.S. Open - 401056556, PGA Championship - 401056552, Masters - 401056527, Players - 401056522
 
     tournament_ids = [401465539, 401465533, 401465523, 401465508, 401465526,
                         401353217, 401353222, 401353226, 401353232, 401353254,
-                        401243410, 401243414, 401243418, 401243010, 401243005]
+                        401243410, 401243414, 401243418, 401243010, 401243005,
+                        401056547, 401056556, 401056552, 401056527, 401056522]
 
     for id in tournament_ids:
         url = f"https://www.espn.com/golf/leaderboard?tournamentId={id}"
