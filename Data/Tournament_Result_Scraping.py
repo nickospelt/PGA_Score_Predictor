@@ -88,7 +88,13 @@ def scrape_tournament_results():
         round_date, temperature, precipitation, wind_speed, wind_direction, elevation = get_weather_data(course_location, start_date, end_date)
 
 
-        average_score = 0
+        r1_avg_score = 0
+        r2_avg_score = 0
+        r3_avg_score = 0
+        r4_avg_score = 0
+        
+        r1_r2_player_count = 0
+        r3_r4_player_count = 0
 
         # Get information on all players in the field
         player_rows = soup.find_all('tr', attrs={"class": "PlayerRow__Overview PlayerRow__Overview--expandable Table__TR Table__even"})
@@ -110,8 +116,9 @@ def scrape_tournament_results():
                 round_1_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[0], "ROUND_NUMBER": 1, "ELEVATION": elevation, "TEMPERATURE": temperature[0], "PRECIPITATION": precipitation[0], "WIND_SPEED": wind_speed[0], "WIND_DIRECTION": wind_direction[0], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r1_score, "TOTAL_SCORE": total_score}
                 round_2_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[1], "ROUND_NUMBER": 2, "ELEVATION": elevation, "TEMPERATURE": temperature[1], "PRECIPITATION": precipitation[1], "WIND_SPEED": wind_speed[1], "WIND_DIRECTION": wind_direction[1], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r2_score, "TOTAL_SCORE": total_score}
                 
-                player_count += 1
-                average_score += int(total_score) / 2
+                r1_r2_player_count += 1
+                r1_avg_score += int(r1_score)
+                r2_avg_score += int(r2_score)
 
                 player_results.append(round_1_info)
                 player_results.append(round_2_info)
@@ -122,23 +129,29 @@ def scrape_tournament_results():
                 round_3_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[2], "ROUND_NUMBER": 3, "ELEVATION": elevation, "TEMPERATURE": temperature[2], "PRECIPITATION": precipitation[2], "WIND_SPEED": wind_speed[2], "WIND_DIRECTION": wind_direction[2], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r3_score, "TOTAL_SCORE": total_score}
                 round_4_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[3], "ROUND_NUMBER": 4, "ELEVATION": elevation, "TEMPERATURE": temperature[3], "PRECIPITATION": precipitation[3], "WIND_SPEED": wind_speed[3], "WIND_DIRECTION": wind_direction[3], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r4_score, "TOTAL_SCORE": total_score}
 
-                player_count += 1
-                average_score += int(total_score) / 4
+                r3_r4_player_count += 1
+                r3_avg_score += int(r3_score)
+                r4_avg_score += int(r4_score)
 
                 player_results.append(round_1_info)
                 player_results.append(round_2_info)
                 player_results.append(round_3_info)
                 player_results.append(round_4_info)
 
-        # course rating calculation (pga tour avg +5.4 handicap, giving an extra stroke compared to normal scratch golfers) (rating should be on average what a 0 handicap would shoot)
-        average_score /= player_count
-        average_score = round(average_score, 2)
+        # average scores for each round of the tournament
+        r1_avg_score = round(r1_avg_score / r1_r2_player_count, 2)
+        r2_avg_score = round(r2_avg_score / r1_r2_player_count, 2)
+        r3_avg_score = round(r3_avg_score / r3_r4_player_count, 2)
+        r4_avg_score = round(r4_avg_score / r3_r4_player_count, 2)
 
         # print(f"Tournament Name: {tournament_name}, Par: {par}, length: {length}, course rating: {course_rating}")
 
         # create dataframe
         tournament_information = pd.DataFrame(player_results, columns=["TOURNAMENT_NAME", "ROUND_DATE", "ROUND_NUMBER", "ELEVATION", "TEMPERATURE", "PRECIPITATION", "WIND_SPEED", "WIND_DIRECTION", "COURSE_NAME", "COURSE_LOCATION", "PLAYER_NAME", "PAR", "LENGTH", "COURSE_AVERAGE_SCORE", "SCORE", "TOTAL_SCORE"])
-        tournament_information["COURSE_AVERAGE_SCORE"] = average_score
+        tournament_information["R1_AVG_SCORE"] = r1_avg_score
+        tournament_information["R2_AVG_SCORE"] = r2_avg_score
+        tournament_information["R3_AVG_SCORE"] = r3_avg_score
+        tournament_information["R4_AVG_SCORE"] = r4_avg_score
         tournament_information["COURSE_NAME"] = course_name
         tournament_information["COURSE_LOCATION"] = course_location
 

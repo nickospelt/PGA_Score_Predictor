@@ -18,8 +18,8 @@ def aggregate_player_and_tournament_data():
     "SCORE", "TOTAL_SCORE"])"""
     master_tournament_player_data_df = pd.DataFrame(columns=["TOURNAMENT_NAME", "ROUND_DATE", "ROUND_NUMBER", 
         "ELEVATION", "TEMPERATURE", "PRECIPITATION", "WIND_SPEED", "WIND_DIRECTION", 
-        "COURSE_NAME", "COURSE_LOCATION", "PAR", "LENGTH", "COURSE_AVERAGE_SCORE", 
-        'PLAYER_ID', 'PLAYER_NAME', 'GIR_PERCENTAGE', 'TOTAL_DRIVING_DISTANCE', 'FIR_PERCENTAGE', 'SCRAMBLING_PERCENTAGE', 'PUTTS_PER_ROUND', 
+        "COURSE_NAME", "COURSE_LOCATION", "PAR", "LENGTH", "R1_AVG_SCORE", "R2_AVG_SCORE", "R3_AVG_SCORE", "R4_AVG_SCORE", 
+        'PLAYER_ID', 'PLAYER_NAME', 'GIR_PERCENTAGE', 'TOTAL_DRIVING_DISTANCE', 'FIR_PERCENTAGE', 'SCRAMBLING_PERCENTAGE', 'PUTTS_PER_ROUND', 'R1_PUTTS',
         "SCORE", "TOTAL_SCORE"])
 
     # repeat this process for each tournament result file
@@ -37,6 +37,7 @@ def aggregate_player_and_tournament_data():
         # three_putts_per_round_df = pd.read_csv(f'{player_data_path}/three_putts_per_round.csv')
         putts_per_round_df = pd.read_csv(f'{player_data_path}/putts_per_round.csv')
         # prox_to_hole_df = pd.read_csv(f'{player_data_path}/prox_to_hole.csv')
+        r1_putts_df = pd.read_csv(f'{player_data_path}/r1_putts.csv')
 
         # reformat data
         #prox_to_hole_df['AVG'] = prox_to_hole_df.apply(lambda x: format_prox_to_hole(x['AVG']), axis=1)
@@ -50,12 +51,13 @@ def aggregate_player_and_tournament_data():
         main_player_data_df = main_player_data_df[['PLAYER_ID', 'PLAYER_NAME', 'GIR_PERCENTAGE', 'TOTAL_DRIVING_DISTANCE', 'FIR_PERCENTAGE', '%']].rename(columns={'%': 'SCRAMBLING_PERCENTAGE'})
         main_player_data_df = pd.merge(main_player_data_df, putts_per_round_df, on='PLAYER_ID', how='inner')
         main_player_data_df = main_player_data_df[['PLAYER_ID', 'PLAYER_NAME', 'GIR_PERCENTAGE', 'TOTAL_DRIVING_DISTANCE', 'FIR_PERCENTAGE', 'SCRAMBLING_PERCENTAGE', 'AVG']].rename(columns={'AVG': 'PUTTS_PER_ROUND'})
-        
+        main_player_data_df = pd.merge(main_player_data_df, r1_putts_df, on='PLAYER_ID', how='inner')
+        main_player_data_df = main_player_data_df[['PLAYER_ID', 'PLAYER_NAME', 'GIR_PERCENTAGE', 'TOTAL_DRIVING_DISTANCE', 'FIR_PERCENTAGE', 'SCRAMBLING_PERCENTAGE', 'PUTTS_PER_ROUND', 'TOTAL PUTTS']].rename(columns={'TOTAL PUTTS': 'R1_PUTTS'})
 
 
         # reorder the columns
         main_player_data_df['TOURNAMENT_NAME'] = tournament_result_csv.replace('.csv', '')
-        main_player_data_df = main_player_data_df[['PLAYER_ID', 'PLAYER_NAME', 'TOURNAMENT_NAME', 'GIR_PERCENTAGE', 'TOTAL_DRIVING_DISTANCE', 'FIR_PERCENTAGE', 'SCRAMBLING_PERCENTAGE', 'PUTTS_PER_ROUND']]
+        main_player_data_df = main_player_data_df[['PLAYER_ID', 'PLAYER_NAME', 'TOURNAMENT_NAME', 'GIR_PERCENTAGE', 'TOTAL_DRIVING_DISTANCE', 'FIR_PERCENTAGE', 'SCRAMBLING_PERCENTAGE', 'PUTTS_PER_ROUND', 'R1_PUTTS']]
 
         # print and save the aggregated player data for the respective tournament
         print(f"{tournament_result_csv.replace('.csv', '')} Player Stats Dataframe:")
@@ -67,8 +69,8 @@ def aggregate_player_and_tournament_data():
         tournament_player_data_df = pd.merge(main_player_data_df, tournament_result_df, on=['PLAYER_NAME', 'TOURNAMENT_NAME']).sort_values(by='TOTAL_SCORE', ascending=FALSE).reset_index(drop=True)
         tournament_player_data_df = tournament_player_data_df[["TOURNAMENT_NAME", "ROUND_DATE", "ROUND_NUMBER", 
             "ELEVATION", "TEMPERATURE", "PRECIPITATION", "WIND_SPEED", "WIND_DIRECTION", 
-            "COURSE_NAME", "COURSE_LOCATION", "PAR", "LENGTH", "COURSE_AVERAGE_SCORE", 
-            'PLAYER_ID', 'PLAYER_NAME', 'GIR_PERCENTAGE', 'TOTAL_DRIVING_DISTANCE', 'FIR_PERCENTAGE', 'SCRAMBLING_PERCENTAGE', 'PUTTS_PER_ROUND', 
+            "COURSE_NAME", "COURSE_LOCATION", "PAR", "LENGTH", "R1_AVG_SCORE", "R2_AVG_SCORE", "R3_AVG_SCORE", "R4_AVG_SCORE", 
+            'PLAYER_ID', 'PLAYER_NAME', 'GIR_PERCENTAGE', 'TOTAL_DRIVING_DISTANCE', 'FIR_PERCENTAGE', 'SCRAMBLING_PERCENTAGE', 'PUTTS_PER_ROUND', 'R1_PUTTS',
             "SCORE", "TOTAL_SCORE"]]
 
         print(f"{tournament_result_csv.replace('.csv', '')} Final Dataframe:")
