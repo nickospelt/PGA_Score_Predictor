@@ -66,7 +66,7 @@ def aggregate_player_and_tournament_data():
         player_data_path = os.path.join(main_dir, f"Player_Data/{tournament_result_csv.replace('.csv', '')}")
         main_player_data_df.to_csv(f"{os.path.join(player_data_path, 'main_player_data.csv')}", index=False)
 
-        tournament_player_data_df = pd.merge(main_player_data_df, tournament_result_df, on=['PLAYER_NAME', 'TOURNAMENT_NAME']).sort_values(by='TOTAL_SCORE', ascending=FALSE).reset_index(drop=True)
+        tournament_player_data_df = pd.merge(main_player_data_df, tournament_result_df, on=['PLAYER_NAME', 'TOURNAMENT_NAME']).sort_values(by='TOTAL_SCORE', ascending=False).reset_index(drop=True)
         tournament_player_data_df = tournament_player_data_df[["TOURNAMENT_NAME", "ROUND_DATE", "ROUND_NUMBER", 
             "ELEVATION", "TEMPERATURE", "PRECIPITATION", "WIND_SPEED", "WIND_DIRECTION", 
             "COURSE_NAME", "COURSE_LOCATION", "PAR", "LENGTH", "R1_AVG_SCORE", "R2_AVG_SCORE", "R3_AVG_SCORE", "R4_AVG_SCORE", 
@@ -78,8 +78,11 @@ def aggregate_player_and_tournament_data():
         print('\n')
 
         # add to the master dataset
-        master_tournament_player_data_df = master_tournament_player_data_df.append(tournament_player_data_df).sort_values(by=['TOURNAMENT_NAME', 'TOTAL_SCORE', 'PLAYER_NAME', 'ROUND_DATE'], ascending=['FALSE', 'TRUE', 'TRUE', 'FALSE']).reset_index(drop=True)
-
+        master_tournament_player_data_df = (
+            pd.concat([master_tournament_player_data_df, tournament_player_data_df])
+                .sort_values(by=['TOURNAMENT_NAME', 'TOTAL_SCORE', 'PLAYER_NAME', 'ROUND_DATE'], ascending=[False, True, True, False])
+                .reset_index(drop=True)
+        )
     print(f"Master Dataframe:")
     print(master_tournament_player_data_df)
     master_tournament_player_data_df.to_csv(f"{os.path.join(main_dir, 'master_pga_dataset.csv')}", index=False)
