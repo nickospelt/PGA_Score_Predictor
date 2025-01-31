@@ -1,0 +1,75 @@
+RANK,MOVEMENT,PLAYER_ID,PLAYER,AVG,TOTAL SG:PUTTING,MEASURED ROUNDS
+1,50,27958,Ryan Blaum,2.006,8.023,4
+2,0,46443,Brian Campbell,1.942,7.767,4
+3,15,34360,Patrick Reed,1.855,7.419,4
+4,36,46550,Brandon Hagy,1.659,6.635,4
+5,49,34431,Robert Streb,1.645,6.578,4
+6,21,48081,Xander Schauffele,1.438,5.751,4
+7,0,27556,Ted Potter Jr.,1.309,5.237,4
+8,64,26758,David Hearn,1.236,4.942,4
+9,0,12510,Chad Campbell,1.226,4.904,4
+10,20,29725,Tony Finau,1.198,4.793,4
+11,60,28252,Seamus Power,1.157,4.626,4
+12,-5,37380,Curtis Luck,1.144,4.576,4
+13,10,34098,Russell Henley,1.091,4.362,4
+14,0,48822,Sebastián Muñoz,1.080,4.318,4
+15,-3,21961,Charles Howell III,.958,3.831,4
+16,40,26300,Matt Jones,.929,3.714,4
+17,0,39324,J.J. Spaun,.829,3.315,4
+18,0,30191,Julián Etulain,.775,3.101,4
+19,50,47959,Bryson DeChambeau,.706,2.823,4
+20,0,24781,Hunter Mahan,.661,2.644,4
+21,0,45486,Joaquin Niemann,.653,2.610,4
+22,-5,33413,Ben Martin,.641,2.564,4
+23,0,29221,Webb Simpson,.628,2.510,4
+24,0,20472,Alex Cejka,.627,2.509,4
+25,0,28420,Ryan Brehm,.621,2.482,4
+26,0,34174,John Huh,.599,2.395,4
+27,47,27141,J.B. Holmes,.547,2.186,4
+28,0,25804,Bubba Watson,.543,2.172,4
+29,-4,22046,Geoff Ogilvy,.480,1.919,4
+30,0,27770,Camilo Villegas,.478,1.911,4
+31,0,29461,Jamie Lovemark,.476,1.902,4
+32,2,34358,Jonathan Randolph,.369,1.475,4
+33,0,40055,Daniel Obremski,.365,1.460,4
+34,0,01810,Phil Mickelson,.338,1.351,4
+35,-2,27095,Nick Watney,.260,1.038,4
+36,17,28500,Martin Flores,.248,.991,4
+37,0,27436,Graham DeLaet,.240,.960,4
+38,6,34099,Harris English,.210,.839,4
+39,0,24925,Jonathan Byrd,.121,.483,4
+40,27,39975,Michael Kim,.108,.430,4
+41,0,33120,Mark Anderson,.098,.393,4
+42,0,27963,Chris Stroud,.096,.384,4
+43,-32,25493,Nick Taylor,.095,.379,4
+44,-16,34409,David Lingmerth,.013,.051,4
+45,0,30750,Tommy Gainey,-.033,-.134,4
+46,-15,32448,James Hahn,-.055,-.220,4
+47,-31,24924,Bill Haas,-.128,-.512,4
+48,0,46440,Smylie Kaufman,-.155,-.622,4
+49,0,20229,Stewart Cink,-.167,-.668,4
+50,0,23621,Rory Sabbatini,-.169,-.676,4
+51,11,33418,Shawn Stefani,-.180,-.722,4
+52,-39,34466,Peter Malnati,-.183,-.731,4
+53,-12,35506,Mackenzie Hughes,-.188,-.751,4
+54,-46,46601,Trey Mullinax,-.237,-.950,4
+55,0,36801,Mark Hubbard,-.245,-.981,4
+56,0,25632,Jimmy Walker,-.252,-1.009,4
+57,3,40058,Zac Blair,-.298,-1.191,4
+58,-52,36699,Patrick Rodgers,-.319,-1.277,4
+59,14,29485,Brett Stegmaier,-.351,-1.406,4
+60,1,23353,J.J. Henry,-.384,-1.536,4
+61,0,32200,Roberto Castro,-.418,-1.671,4
+62,0,29908,C.T. Pan,-.450,-1.801,4
+63,-49,29926,Danny Lee,-.561,-2.245,4
+64,-43,19846,Brian Gay,-.571,-2.283,4
+65,0,01706,Davis Love III,-.594,-2.376,4
+66,-2,33141,Keegan Bradley,-.721,-2.885,4
+67,-25,27214,Kevin Streelman,-.733,-2.934,4
+68,0,30692,Scott Stallings,-.736,-2.946,4
+69,-11,37189,Harold Varner III,-.789,-3.155,4
+70,-69,24358,Robert Garrigus,-1.058,-4.231,4
+71,-35,35879,Kelly Kraft,-1.118,-4.473,4
+72,-26,34264,Hudson Swafford,-1.184,-4.737,4
+73,-18,28132,Tyrone Van Aswegen,-1.380,-5.520,4
+74,0,31323,Gary Woodland,-1.682,-6.729,4

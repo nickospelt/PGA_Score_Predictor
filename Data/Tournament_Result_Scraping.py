@@ -69,8 +69,8 @@ def scrape_tournament_results():
 
         raw_tournament_name = soup.find('h1', class_="headline headline__h1 Leaderboard__Event__Title").text
         tournament_name = ""
-        if raw_tournament_name != '2021 Masters Tournament' and raw_tournament_name != '2019 Masters Tournament' and raw_tournament_name != '2018 Masters Tournament':
-            tournament_name = year + " " + soup.find('h1', class_="headline headline__h1 Leaderboard__Event__Title").text
+        if raw_tournament_name != '2021 Masters Tournament' and raw_tournament_name != '2019 Masters Tournament' and raw_tournament_name != '2018 Masters Tournament' and raw_tournament_name != '2017 Masters Tournament':
+            tournament_name = year + " " + raw_tournament_name
         else:
             tournament_name = raw_tournament_name
         
