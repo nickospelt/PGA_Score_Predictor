@@ -1,11 +1,13 @@
 from Tournament_Result_Scraping import scrape_tournament_results
+# Merge_Tournament_Results_Player_SG_Data is the most update piece of the part of the data pipeline
 from Merge_Tournament_Results_Player_Data import aggregate_player_and_tournament_data
+from Merge_Tournament_Results_Player_SG_Data import aggregate_player_sg_and_tournament_data
 import pandas as pd
 
 
 # All relevant player Statistics must be in the correct tournament folder before running this script
 scrape_tournament_results()
-aggregate_player_and_tournament_data()
+aggregate_player_sg_and_tournament_data()
 
 master_dataset_df = pd.read_csv('Data/master_pga_dataset.csv')
 

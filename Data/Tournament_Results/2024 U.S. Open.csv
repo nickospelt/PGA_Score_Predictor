@@ -1,0 +1,461 @@
+TOURNAMENT_NAME,ROUND_DATE,ROUND_NUMBER,ELEVATION,TEMPERATURE,PRECIPITATION,WIND_SPEED,WIND_DIRECTION,COURSE_NAME,COURSE_LOCATION,PLAYER_NAME,PAR,LENGTH,SCORE,TOTAL_SCORE
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Bryson DeChambeau,70,7569,67,274
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Bryson DeChambeau,70,7569,69,274
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Bryson DeChambeau,70,7569,67,274
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Bryson DeChambeau,70,7569,71,274
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Rory McIlroy,70,7569,65,275
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Rory McIlroy,70,7569,72,275
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Rory McIlroy,70,7569,69,275
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Rory McIlroy,70,7569,69,275
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Tony Finau,70,7569,68,276
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Tony Finau,70,7569,69,276
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Tony Finau,70,7569,72,276
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Tony Finau,70,7569,67,276
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Patrick Cantlay,70,7569,65,276
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Patrick Cantlay,70,7569,71,276
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Patrick Cantlay,70,7569,70,276
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Patrick Cantlay,70,7569,70,276
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Matthieu Pavon,70,7569,67,277
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Matthieu Pavon,70,7569,70,277
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Matthieu Pavon,70,7569,69,277
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Matthieu Pavon,70,7569,71,277
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Hideki Matsuyama,70,7569,72,278
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Hideki Matsuyama,70,7569,66,278
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Hideki Matsuyama,70,7569,70,278
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Hideki Matsuyama,70,7569,70,278
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Russell Henley,70,7569,70,279
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Russell Henley,70,7569,70,279
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Russell Henley,70,7569,72,279
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Russell Henley,70,7569,67,279
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Xander Schauffele,70,7569,70,279
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Xander Schauffele,70,7569,69,279
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Xander Schauffele,70,7569,72,279
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Xander Schauffele,70,7569,68,279
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Sam Burns,70,7569,73,280
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Sam Burns,70,7569,67,280
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Sam Burns,70,7569,73,280
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Sam Burns,70,7569,67,280
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Davis Thompson,70,7569,70,280
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Davis Thompson,70,7569,72,280
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Davis Thompson,70,7569,70,280
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Davis Thompson,70,7569,68,280
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Corey Conners,70,7569,69,280
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Corey Conners,70,7569,70,280
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Corey Conners,70,7569,71,280
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Corey Conners,70,7569,70,280
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Sergio Garcia,70,7569,69,281
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Sergio Garcia,70,7569,71,281
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Sergio Garcia,70,7569,71,281
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Sergio Garcia,70,7569,70,281
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Ludvig Åberg,70,7569,66,281
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Ludvig Åberg,70,7569,69,281
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Ludvig Åberg,70,7569,73,281
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Ludvig Åberg,70,7569,73,281
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Thomas Detry,70,7569,69,282
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Thomas Detry,70,7569,67,282
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Thomas Detry,70,7569,76,282
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Thomas Detry,70,7569,70,282
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Collin Morikawa,70,7569,70,282
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Collin Morikawa,70,7569,74,282
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Collin Morikawa,70,7569,66,282
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Collin Morikawa,70,7569,72,282
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Tommy Fleetwood,70,7569,70,283
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Tommy Fleetwood,70,7569,75,283
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Tommy Fleetwood,70,7569,70,283
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Tommy Fleetwood,70,7569,68,283
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Akshay Bhatia,70,7569,68,283
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Akshay Bhatia,70,7569,71,283
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Akshay Bhatia,70,7569,73,283
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Akshay Bhatia,70,7569,71,283
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Taylor Pendrith,70,7569,71,283
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Taylor Pendrith,70,7569,70,283
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Taylor Pendrith,70,7569,70,283
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Taylor Pendrith,70,7569,72,283
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Shane Lowry,70,7569,74,284
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Shane Lowry,70,7569,71,284
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Shane Lowry,70,7569,70,284
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Shane Lowry,70,7569,69,284
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Aaron Rai,70,7569,69,284
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Aaron Rai,70,7569,74,284
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Aaron Rai,70,7569,68,284
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Aaron Rai,70,7569,73,284
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Max Greyserman,70,7569,71,285
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Max Greyserman,70,7569,74,285
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Max Greyserman,70,7569,72,285
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Max Greyserman,70,7569,68,285
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Daniel Berger,70,7569,73,285
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Daniel Berger,70,7569,70,285
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Daniel Berger,70,7569,73,285
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Daniel Berger,70,7569,69,285
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Min Woo Lee,70,7569,73,285
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Min Woo Lee,70,7569,69,285
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Min Woo Lee,70,7569,72,285
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Min Woo Lee,70,7569,71,285
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Brian Harman,70,7569,71,285
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Brian Harman,70,7569,71,285
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Brian Harman,70,7569,71,285
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Brian Harman,70,7569,72,285
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Stephan Jaeger,70,7569,70,285
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Stephan Jaeger,70,7569,70,285
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Stephan Jaeger,70,7569,73,285
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Stephan Jaeger,70,7569,72,285
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Brooks Koepka,70,7569,70,286
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Brooks Koepka,70,7569,75,286
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Brooks Koepka,70,7569,71,286
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Brooks Koepka,70,7569,70,286
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Neal Shipley,70,7569,70,286
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Neal Shipley,70,7569,73,286
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Neal Shipley,70,7569,71,286
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Neal Shipley,70,7569,72,286
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Chris Kirk,70,7569,71,286
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Chris Kirk,70,7569,71,286
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Chris Kirk,70,7569,72,286
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Chris Kirk,70,7569,72,286
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Zac Blair,70,7569,70,286
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Zac Blair,70,7569,69,286
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Zac Blair,70,7569,75,286
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Zac Blair,70,7569,72,286
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Tom Kim,70,7569,71,286
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Tom Kim,70,7569,68,286
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Tom Kim,70,7569,71,286
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Tom Kim,70,7569,76,286
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Tyrrell Hatton,70,7569,68,286
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Tyrrell Hatton,70,7569,71,286
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Tyrrell Hatton,70,7569,70,286
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Tyrrell Hatton,70,7569,77,286
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Adam Scott,70,7569,70,287
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Adam Scott,70,7569,72,287
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Adam Scott,70,7569,76,287
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Adam Scott,70,7569,69,287
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Sahith Theegala,70,7569,77,287
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Sahith Theegala,70,7569,68,287
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Sahith Theegala,70,7569,72,287
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Sahith Theegala,70,7569,70,287
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Si Woo Kim,70,7569,71,287
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Si Woo Kim,70,7569,72,287
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Si Woo Kim,70,7569,74,287
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Si Woo Kim,70,7569,70,287
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Keegan Bradley,70,7569,74,287
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Keegan Bradley,70,7569,70,287
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Keegan Bradley,70,7569,72,287
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Keegan Bradley,70,7569,71,287
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",J.T. Poston,70,7569,73,287
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",J.T. Poston,70,7569,71,287
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",J.T. Poston,70,7569,71,287
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",J.T. Poston,70,7569,72,287
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Christiaan Bezuidenhout,70,7569,72,287
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Christiaan Bezuidenhout,70,7569,71,287
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Christiaan Bezuidenhout,70,7569,72,287
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Christiaan Bezuidenhout,70,7569,72,287
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Cameron Smith,70,7569,71,287
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Cameron Smith,70,7569,72,287
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Cameron Smith,70,7569,72,287
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Cameron Smith,70,7569,72,287
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Isaiah Salinda,70,7569,70,287
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Isaiah Salinda,70,7569,72,287
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Isaiah Salinda,70,7569,73,287
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Isaiah Salinda,70,7569,72,287
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Denny McCarthy,70,7569,75,287
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Denny McCarthy,70,7569,67,287
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Denny McCarthy,70,7569,72,287
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Denny McCarthy,70,7569,73,287
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Harris English,70,7569,70,288
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Harris English,70,7569,73,288
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Harris English,70,7569,74,288
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Harris English,70,7569,71,288
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Jordan Spieth,70,7569,72,288
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Jordan Spieth,70,7569,71,288
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Jordan Spieth,70,7569,74,288
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Jordan Spieth,70,7569,71,288
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Frankie Capan III,70,7569,71,288
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Frankie Capan III,70,7569,70,288
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Frankie Capan III,70,7569,76,288
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Frankie Capan III,70,7569,71,288
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Tom McKibbin,70,7569,74,288
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Tom McKibbin,70,7569,71,288
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Tom McKibbin,70,7569,71,288
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Tom McKibbin,70,7569,72,288
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Scottie Scheffler,70,7569,71,288
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Scottie Scheffler,70,7569,74,288
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Scottie Scheffler,70,7569,71,288
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Scottie Scheffler,70,7569,72,288
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Emiliano Grillo,70,7569,70,288
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Emiliano Grillo,70,7569,72,288
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Emiliano Grillo,70,7569,73,288
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Emiliano Grillo,70,7569,73,288
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Tim Widing,70,7569,71,288
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Tim Widing,70,7569,68,288
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Tim Widing,70,7569,76,288
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Tim Widing,70,7569,73,288
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Luke Clanton (a),70,7569,76,288
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Luke Clanton (a),70,7569,69,288
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Luke Clanton (a),70,7569,69,288
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Luke Clanton (a),70,7569,74,288
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Billy Horschel,70,7569,73,288
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Billy Horschel,70,7569,67,288
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Billy Horschel,70,7569,74,288
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Billy Horschel,70,7569,74,288
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Justin Lower,70,7569,72,289
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Justin Lower,70,7569,73,289
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Justin Lower,70,7569,74,289
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Justin Lower,70,7569,70,289
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Matt Kuchar,70,7569,72,289
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Matt Kuchar,70,7569,71,289
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Matt Kuchar,70,7569,75,289
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Matt Kuchar,70,7569,71,289
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Nicolai Højgaard,70,7569,72,289
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Nicolai Højgaard,70,7569,69,289
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Nicolai Højgaard,70,7569,74,289
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Nicolai Højgaard,70,7569,74,289
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Mark Hubbard,70,7569,74,289
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Mark Hubbard,70,7569,69,289
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Mark Hubbard,70,7569,70,289
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Mark Hubbard,70,7569,76,289
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Nico Echavarria,70,7569,72,290
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Nico Echavarria,70,7569,69,290
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Nico Echavarria,70,7569,78,290
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Nico Echavarria,70,7569,71,290
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",David Puig,70,7569,76,291
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",David Puig,70,7569,68,291
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",David Puig,70,7569,69,291
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",David Puig,70,7569,78,291
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",S.H. Kim,70,7569,69,292
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",S.H. Kim,70,7569,72,292
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",S.H. Kim,70,7569,83,292
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",S.H. Kim,70,7569,68,292
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Ben Kohles,70,7569,77,292
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Ben Kohles,70,7569,68,292
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Ben Kohles,70,7569,76,292
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Ben Kohles,70,7569,71,292
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Ryan Fox,70,7569,73,292
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Ryan Fox,70,7569,72,292
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Ryan Fox,70,7569,76,292
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Ryan Fox,70,7569,71,292
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Greyson Sigg,70,7569,76,292
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Greyson Sigg,70,7569,69,292
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Greyson Sigg,70,7569,75,292
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Greyson Sigg,70,7569,72,292
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Sepp Straka,70,7569,70,292
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Sepp Straka,70,7569,72,292
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Sepp Straka,70,7569,78,292
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Sepp Straka,70,7569,72,292
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Brian Campbell,70,7569,73,292
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Brian Campbell,70,7569,70,292
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Brian Campbell,70,7569,75,292
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Brian Campbell,70,7569,74,292
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Adam Svensson,70,7569,73,292
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Adam Svensson,70,7569,70,292
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Adam Svensson,70,7569,74,292
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Adam Svensson,70,7569,75,292
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Wyndham Clark,70,7569,73,292
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Wyndham Clark,70,7569,71,292
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Wyndham Clark,70,7569,71,292
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Wyndham Clark,70,7569,77,292
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Matt Fitzpatrick,70,7569,73,293
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Matt Fitzpatrick,70,7569,72,293
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Matt Fitzpatrick,70,7569,79,293
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Matt Fitzpatrick,70,7569,69,293
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Francesco Molinari,70,7569,73,293
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Francesco Molinari,70,7569,72,293
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Francesco Molinari,70,7569,77,293
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Francesco Molinari,70,7569,71,293
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Martin Kaymer,70,7569,70,293
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Martin Kaymer,70,7569,73,293
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Martin Kaymer,70,7569,77,293
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Martin Kaymer,70,7569,73,293
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Cameron Young,70,7569,73,294
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Cameron Young,70,7569,72,294
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Cameron Young,70,7569,75,294
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Cameron Young,70,7569,74,294
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Brendon Todd,70,7569,74,294
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Brendon Todd,70,7569,71,294
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Brendon Todd,70,7569,74,294
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Brendon Todd,70,7569,75,294
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Dean Burmester,70,7569,74,295
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Dean Burmester,70,7569,71,295
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Dean Burmester,70,7569,76,295
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Dean Burmester,70,7569,74,295
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Gunnar Broin (a),70,7569,75,296
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Gunnar Broin (a),70,7569,68,296
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Gunnar Broin (a),70,7569,81,296
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Gunnar Broin (a),70,7569,72,296
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Brandon Wu,70,7569,74,296
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Brandon Wu,70,7569,71,296
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Brandon Wu,70,7569,78,296
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Brandon Wu,70,7569,73,296
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Sam Bennett,70,7569,69,297
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Sam Bennett,70,7569,72,297
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Sam Bennett,70,7569,77,297
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Sam Bennett,70,7569,79,297
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Jackson Suber,70,7569,69,298
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Jackson Suber,70,7569,73,298
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Jackson Suber,70,7569,81,298
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Jackson Suber,70,7569,75,298
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Austin Eckroat,70,7569,72,300
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Austin Eckroat,70,7569,72,300
+2024 U.S. Open,2024-06-15,3,165.0,80.9,0.0,8.1,13,Pinehurst No. 2,"Pinehurst, NC",Austin Eckroat,70,7569,78,300
+2024 U.S. Open,2024-06-16,4,165.0,79.8,0.004,8.6,104,Pinehurst No. 2,"Pinehurst, NC",Austin Eckroat,70,7569,78,300
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Viktor Hovland,70,7569,78,146
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Viktor Hovland,70,7569,68,146
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Jackson Buchanan (a),70,7569,76,146
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Jackson Buchanan (a),70,7569,70,146
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Ben James (a),70,7569,75,146
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Ben James (a),70,7569,71,146
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Jason Scrivener,70,7569,74,146
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Jason Scrivener,70,7569,72,146
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Nick Dunlap,70,7569,73,146
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Nick Dunlap,70,7569,73,146
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Eric Cole,70,7569,73,146
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Eric Cole,70,7569,73,146
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Justin Rose,70,7569,73,146
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Justin Rose,70,7569,73,146
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Brandon Robinson Thompson,70,7569,72,146
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Brandon Robinson Thompson,70,7569,74,146
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Frederik Kjettrup,70,7569,72,146
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Frederik Kjettrup,70,7569,74,146
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Bryan Kim (a),70,7569,72,146
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Bryan Kim (a),70,7569,74,146
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Max Homa,70,7569,71,146
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Max Homa,70,7569,75,146
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Taisei Shimizu,70,7569,71,146
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Taisei Shimizu,70,7569,75,146
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Robert MacIntyre,70,7569,70,146
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Robert MacIntyre,70,7569,76,146
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Rico Hoey,70,7569,77,147
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Rico Hoey,70,7569,70,147
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Parker Bell (a),70,7569,77,147
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Parker Bell (a),70,7569,70,147
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Peter Malnati,70,7569,74,147
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Peter Malnati,70,7569,73,147
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Tiger Woods,70,7569,74,147
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Tiger Woods,70,7569,73,147
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Adam Hadwin,70,7569,74,147
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Adam Hadwin,70,7569,73,147
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Kurt Kitayama,70,7569,73,147
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Kurt Kitayama,70,7569,74,147
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Omar Morales (a),70,7569,73,147
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Omar Morales (a),70,7569,74,147
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Séamus Power,70,7569,71,147
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Séamus Power,70,7569,76,147
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Richard Mansell,70,7569,78,148
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Richard Mansell,70,7569,70,148
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Taylor Moore,70,7569,76,148
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Taylor Moore,70,7569,72,148
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Erik van Rooyen,70,7569,76,148
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Erik van Rooyen,70,7569,72,148
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Ryo Ishikawa,70,7569,76,148
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Ryo Ishikawa,70,7569,72,148
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Chesson Hadley,70,7569,75,148
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Chesson Hadley,70,7569,73,148
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Eugenio Chacarra,70,7569,75,148
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Eugenio Chacarra,70,7569,73,148
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Tom Hoge,70,7569,75,148
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Tom Hoge,70,7569,73,148
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Will Zalatoris,70,7569,75,148
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Will Zalatoris,70,7569,73,148
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Webb Simpson,70,7569,75,148
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Webb Simpson,70,7569,73,148
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Nick Taylor,70,7569,74,148
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Nick Taylor,70,7569,74,148
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Alex Noren,70,7569,73,148
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Alex Noren,70,7569,75,148
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Jason Day,70,7569,71,148
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Jason Day,70,7569,77,148
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Rickie Fowler,70,7569,71,148
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Rickie Fowler,70,7569,77,148
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Chris Petefish,70,7569,77,149
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Chris Petefish,70,7569,72,149
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Cam Davis,70,7569,77,149
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Cam Davis,70,7569,72,149
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Joey Vrzich,70,7569,76,149
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Joey Vrzich,70,7569,73,149
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Victor Perez,70,7569,75,149
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Victor Perez,70,7569,74,149
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Hiroshi Tai (a),70,7569,75,149
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Hiroshi Tai (a),70,7569,74,149
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Sung Kang,70,7569,74,149
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Sung Kang,70,7569,75,149
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Dustin Johnson,70,7569,74,149
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Dustin Johnson,70,7569,75,149
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Edoardo Molinari,70,7569,72,149
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Edoardo Molinari,70,7569,77,149
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Mac Meissner,70,7569,72,149
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Mac Meissner,70,7569,77,149
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Logan McAllister,70,7569,70,149
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Logan McAllister,70,7569,79,149
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Robert Rock,70,7569,70,149
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Robert Rock,70,7569,79,149
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Takumi Kanaya,70,7569,76,150
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Takumi Kanaya,70,7569,74,150
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Ashton McCulloch (a),70,7569,75,150
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Ashton McCulloch (a),70,7569,75,150
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Beau Hossler,70,7569,74,150
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Beau Hossler,70,7569,76,150
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Sungjae Im,70,7569,74,150
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Sungjae Im,70,7569,76,150
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Gary Woodland,70,7569,72,150
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Gary Woodland,70,7569,78,150
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Sam Bairstow,70,7569,84,151
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Sam Bairstow,70,7569,67,151
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Adam Schenk,70,7569,79,151
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Adam Schenk,70,7569,72,151
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Michael McGowan,70,7569,77,151
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Michael McGowan,70,7569,74,151
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Justin Thomas,70,7569,77,151
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Justin Thomas,70,7569,74,151
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Brendan Valdes (a),70,7569,76,151
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Brendan Valdes (a),70,7569,75,151
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Harry Higgs,70,7569,76,151
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Harry Higgs,70,7569,75,151
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Wells Williams (a),70,7569,75,151
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Wells Williams (a),70,7569,76,151
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Andrew Svoboda,70,7569,75,151
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Andrew Svoboda,70,7569,76,151
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Gordon Sargent (a),70,7569,73,151
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Gordon Sargent (a),70,7569,78,151
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Carter Jenkins,70,7569,73,151
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Carter Jenkins,70,7569,78,151
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Casey Jarvis,70,7569,73,151
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Casey Jarvis,70,7569,78,151
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Willie Mack III,70,7569,71,151
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Willie Mack III,70,7569,80,151
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Adrian Meronk,70,7569,76,152
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Adrian Meronk,70,7569,76,152
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Jake Knapp,70,7569,75,152
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Jake Knapp,70,7569,77,152
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Byeong Hun An,70,7569,74,152
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Byeong Hun An,70,7569,78,152
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Santiago de la Fuente,70,7569,78,153
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Santiago de la Fuente,70,7569,75,153
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Grant Forrest,70,7569,77,153
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Grant Forrest,70,7569,76,153
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",John Chin,70,7569,75,153
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",John Chin,70,7569,78,153
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Lucas Glover,70,7569,74,153
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Lucas Glover,70,7569,79,153
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Jim Herman,70,7569,74,153
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Jim Herman,70,7569,79,153
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Maxwell Moldovan,70,7569,80,154
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Maxwell Moldovan,70,7569,74,154
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Matteo Manassero,70,7569,79,154
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Matteo Manassero,70,7569,75,154
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Stewart Hagestad (a),70,7569,79,154
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Stewart Hagestad (a),70,7569,75,154
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Mackenzie Hughes,70,7569,72,154
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Mackenzie Hughes,70,7569,82,154
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Chris Naegel,70,7569,81,155
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Chris Naegel,70,7569,74,155
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Phil Mickelson,70,7569,79,155
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Phil Mickelson,70,7569,76,155
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Carson Schaake,70,7569,79,155
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Carson Schaake,70,7569,76,155
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Colin Prater (a),70,7569,79,157
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Colin Prater (a),70,7569,78,157
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Otto Black,70,7569,79,159
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Otto Black,70,7569,80,159
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Rikuya Hoshino,70,7569,78,159
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Rikuya Hoshino,70,7569,81,159
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Riki Kawamoto,70,7569,77,159
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Riki Kawamoto,70,7569,82,159
+2024 U.S. Open,2024-06-13,1,165.0,76.2,0.004,8.4,117,Pinehurst No. 2,"Pinehurst, NC",Charlie Reiter,70,7569,80,160
+2024 U.S. Open,2024-06-14,2,165.0,77.5,0.016,8.5,157,Pinehurst No. 2,"Pinehurst, NC",Charlie Reiter,70,7569,80,160
