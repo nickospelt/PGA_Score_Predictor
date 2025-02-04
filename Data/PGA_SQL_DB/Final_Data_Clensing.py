@@ -11,15 +11,15 @@ def clean_values(value):
 
     return clean_value
 
-master_dataset_df = pd.read_csv('/Users/nickospelt/Documents/App_Projects/PGA_Score_Predictor/Data/PGA_SQL_DB/master_pga_dataset_v2.csv')
+master_dataset_df = pd.read_csv('/Users/nickospelt/Documents/App_Projects/PGA_Score_Predictor/Data/PGA_SQL_DB/master_pga_dataset_v3.csv')
 
 master_dataset_df['TOURNAMENT_NAME'] = master_dataset_df['TOURNAMENT_NAME'].apply(clean_values)
 master_dataset_df['COURSE_LOCATION'] = master_dataset_df['COURSE_LOCATION'].apply(clean_values)
 master_dataset_df['PLAYER_NAME'] = master_dataset_df['PLAYER_NAME'].apply(clean_values)
-master_dataset_df['GIR_PERCENTAGE'] = master_dataset_df['GIR_PERCENTAGE'].apply(clean_values)
-master_dataset_df['FIR_PERCENTAGE'] = master_dataset_df['FIR_PERCENTAGE'].apply(clean_values)
-master_dataset_df['SCRAMBLING_PERCENTAGE'] = master_dataset_df['SCRAMBLING_PERCENTAGE'].apply(clean_values)
+#master_dataset_df['GIR_PERCENTAGE'] = master_dataset_df['GIR_PERCENTAGE'].apply(clean_values)
+#master_dataset_df['FIR_PERCENTAGE'] = master_dataset_df['FIR_PERCENTAGE'].apply(clean_values)
+#master_dataset_df['SCRAMBLING_PERCENTAGE'] = master_dataset_df['SCRAMBLING_PERCENTAGE'].apply(clean_values)
 
-master_dataset_df.to_csv('/Users/nickospelt/Documents/App_Projects/PGA_Score_Predictor/Data/PGA_SQL_DB/clean_master_pga_dataset_v2.csv', index=False)
+master_dataset_df.to_csv('/Users/nickospelt/Documents/App_Projects/PGA_Score_Predictor/Data/PGA_SQL_DB/clean_master_pga_dataset_v3.csv', index=False)
 
 
