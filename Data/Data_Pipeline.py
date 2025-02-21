@@ -13,7 +13,9 @@ master_dataset_df = pd.read_csv('Data/master_pga_dataset.csv')
 
 print("Master Dataset Statistics:")
 print(f"Number of Total Records: {len(master_dataset_df)}")
+"""
 print(f"Number of Round 1 Records: {len(master_dataset_df.loc[master_dataset_df['ROUND_NUMBER'] == 1])}")
 print(f"Number of Round 2 Records: {len(master_dataset_df.loc[master_dataset_df['ROUND_NUMBER'] == 2])}")
 print(f"Number of Round 3 Records: {len(master_dataset_df.loc[master_dataset_df['ROUND_NUMBER'] == 3])}")
 print(f"Number of Round 4 Records: {len(master_dataset_df.loc[master_dataset_df['ROUND_NUMBER'] == 4])}")
+"""

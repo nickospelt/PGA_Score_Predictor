@@ -71,6 +71,9 @@ def scrape_tournament_results():
                         401148237, 401056547, 401056558, 401056556, 401056555, 401056552, 401056551, 401056527, 401056523, 401056522, 401056515,
                         401056504, 401025263, 401025261, 401025259, 401025270, 401025255, 401025252, 401025250, 401025247, 401025221, 3749,
                         3763, 2712, 2714, 2710, 2727, 3066, 2706, 2699, 3067, 2700, 2719]
+                        
+    # test id
+    # tournament_ids = [401693940]
 
     for id in tournament_ids:
         url = f"https://www.espn.com/golf/leaderboard?tournamentId={id}"
@@ -120,7 +123,9 @@ def scrape_tournament_results():
         player_results = []
         for player_row in player_rows:
             player_info = player_row.find_all('td', attrs={"class": "Table__TD"})
+            #print(player_info)
 
+            position = player_info[1].text
             player_name = player_info[2].text
             player_score = player_info[3].text
             r1_score = player_info[4].text
@@ -128,24 +133,60 @@ def scrape_tournament_results():
             r3_score = player_info[6].text
             r4_score = player_info[7].text
             total_score = player_info[8].text
+            earnings = player_info[9].text
 
-            # Handle round information of players that played first two rounds but did not make the cut
-            if player_score != 'WD' and player_score != 'MDF' and player_score != 'DQ' and r3_score == '--':
-                round_1_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[0], "ROUND_NUMBER": 1, "ELEVATION": elevation, "TEMPERATURE": temperature[0], "PRECIPITATION": precipitation[0], "WIND_SPEED": wind_speed[0], "WIND_DIRECTION": wind_direction[0], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r1_score, "TOTAL_SCORE": total_score}
-                round_2_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[1], "ROUND_NUMBER": 2, "ELEVATION": elevation, "TEMPERATURE": temperature[1], "PRECIPITATION": precipitation[1], "WIND_SPEED": wind_speed[1], "WIND_DIRECTION": wind_direction[1], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r2_score, "TOTAL_SCORE": total_score}
+            # Not all tournaments have fedex cup points
+            if (len(player_info) <= 10):
+                fedex_points = None
+            else:
+                fedex_points = player_info[10].text
+
+            # Aggregate information of for each player in tournament
+            if player_score != 'WD' and player_score != 'MDF' and player_score != 'DQ':
+
+                # If they didn't make the cut then no scores in rounds 3 and 4
+                if r3_score == '--':
+                    r3_score = None
+                    r4_score = None
+                
+                player_round_info = {"TOURNAMENT_NAME": tournament_name, "TOURNAMENT_DATE": round_date[0], 
+                    "ELEVATION": elevation, 
+                    "R1_TEMPERATURE": temperature[0], "R1_PRECIPITATION": precipitation[0], "R1_WIND_SPEED": wind_speed[0], "R1_WIND_DIRECTION": wind_direction[0],
+                    "R2_TEMPERATURE": temperature[1], "R2_PRECIPITATION": precipitation[1], "R2_WIND_SPEED": wind_speed[1], "R2_WIND_DIRECTION": wind_direction[1],
+                    "R3_TEMPERATURE": temperature[2], "R3_PRECIPITATION": precipitation[2], "R3_WIND_SPEED": wind_speed[2], "R3_WIND_DIRECTION": wind_direction[2],
+                    "R4_TEMPERATURE": temperature[3], "R4_PRECIPITATION": precipitation[3], "R4_WIND_SPEED": wind_speed[3], "R4_WIND_DIRECTION": wind_direction[3], 
+                    "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, 
+                    "R1_SCORE": r1_score, "R2_SCORE": r2_score, "R3_SCORE": r3_score, "R4_SCORE": r4_score, "TOTAL_SCORE": total_score,
+                    "POSITION": position, "EARNINGS": earnings, "FEDEX_PTS": fedex_points}
                 
                 #r1_r2_player_count += 1
                 #r1_avg_score += int(r1_score)
                 #r2_avg_score += int(r2_score)
 
-                player_results.append(round_1_info)
-                player_results.append(round_2_info)
+                player_results.append(player_round_info)
+
+            """
             # Handle round information of players that played all four rounds, or in other words made the cut
             elif player_score != 'WD' and player_score != 'MDF' and player_score != 'DQ':
-                round_1_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[0], "ROUND_NUMBER": 1, "ELEVATION": elevation, "TEMPERATURE": temperature[0], "PRECIPITATION": precipitation[0], "WIND_SPEED": wind_speed[0], "WIND_DIRECTION": wind_direction[0], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r1_score, "TOTAL_SCORE": total_score}
-                round_2_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[1], "ROUND_NUMBER": 2, "ELEVATION": elevation, "TEMPERATURE": temperature[1], "PRECIPITATION": precipitation[1], "WIND_SPEED": wind_speed[1], "WIND_DIRECTION": wind_direction[1], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r2_score, "TOTAL_SCORE": total_score}
-                round_3_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[2], "ROUND_NUMBER": 3, "ELEVATION": elevation, "TEMPERATURE": temperature[2], "PRECIPITATION": precipitation[2], "WIND_SPEED": wind_speed[2], "WIND_DIRECTION": wind_direction[2], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r3_score, "TOTAL_SCORE": total_score}
-                round_4_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[3], "ROUND_NUMBER": 4, "ELEVATION": elevation, "TEMPERATURE": temperature[3], "PRECIPITATION": precipitation[3], "WIND_SPEED": wind_speed[3], "WIND_DIRECTION": wind_direction[3], "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r4_score, "TOTAL_SCORE": total_score}
+                round_1_info = {"TOURNAMENT_NAME": tournament_name, "TOURNAMENT_DATE": round_date[0], "ROUND_NUMBER": 1, 
+                    "ELEVATION": elevation, "TEMPERATURE": temperature[0], "PRECIPITATION": precipitation[0], "WIND_SPEED": wind_speed[0], "WIND_DIRECTION": wind_direction[0], 
+                    "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r1_score, "TOTAL_SCORE": total_score,
+                    "POSITION": position, "EARNINGS": earnings, "FEDEX_PTS": fedex_points}
+
+                round_2_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[1], "ROUND_NUMBER": 2, 
+                    "ELEVATION": elevation, "TEMPERATURE": temperature[1], "PRECIPITATION": precipitation[1], "WIND_SPEED": wind_speed[1], "WIND_DIRECTION": wind_direction[1], 
+                    "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r2_score, "TOTAL_SCORE": total_score,
+                    "POSITION": position, "EARNINGS": earnings, "FEDEX_PTS": fedex_points}
+
+                round_3_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[2], "ROUND_NUMBER": 3, 
+                    "ELEVATION": elevation, "TEMPERATURE": temperature[2], "PRECIPITATION": precipitation[2], "WIND_SPEED": wind_speed[2], "WIND_DIRECTION": wind_direction[2], 
+                    "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r3_score, "TOTAL_SCORE": total_score,
+                    "POSITION": position, "EARNINGS": earnings, "FEDEX_PTS": fedex_points}
+
+                round_4_info = {"TOURNAMENT_NAME": tournament_name, "ROUND_DATE": round_date[3], "ROUND_NUMBER": 4, 
+                    "ELEVATION": elevation, "TEMPERATURE": temperature[3], "PRECIPITATION": precipitation[3], "WIND_SPEED": wind_speed[3], "WIND_DIRECTION": wind_direction[3], 
+                    "PAR": par, "LENGTH": length, "PLAYER_NAME": player_name, "SCORE": r4_score, "TOTAL_SCORE": total_score,
+                    "POSITION": position, "EARNINGS": earnings, "FEDEX_PTS": fedex_points}
 
                 #r3_r4_player_count += 1
                 #r3_avg_score += int(r3_score)
@@ -155,7 +196,8 @@ def scrape_tournament_results():
                 player_results.append(round_2_info)
                 player_results.append(round_3_info)
                 player_results.append(round_4_info)
-
+            """
+        
         # average scores for each round of the tournament
         #r1_avg_score = round(r1_avg_score / r1_r2_player_count, 2)
         #r2_avg_score = round(r2_avg_score / r1_r2_player_count, 2)
@@ -165,7 +207,16 @@ def scrape_tournament_results():
         # print(f"Tournament Name: {tournament_name}, Par: {par}, length: {length}, course rating: {course_rating}")
 
         # create dataframe
-        tournament_information = pd.DataFrame(player_results, columns=["TOURNAMENT_NAME", "ROUND_DATE", "ROUND_NUMBER", "ELEVATION", "TEMPERATURE", "PRECIPITATION", "WIND_SPEED", "WIND_DIRECTION", "COURSE_NAME", "COURSE_LOCATION", "PLAYER_NAME", "PAR", "LENGTH", "SCORE", "TOTAL_SCORE"])
+        tournament_information = pd.DataFrame(player_results, columns=["TOURNAMENT_NAME", "TOURNAMENT_DATE",
+            "ELEVATION", 
+            "R1_TEMPERATURE", "R1_PRECIPITATION", "R1_WIND_SPEED", "R1_WIND_DIRECTION",
+            "R2_TEMPERATURE", "R2_PRECIPITATION", "R2_WIND_SPEED", "R2_WIND_DIRECTION",
+            "R3_TEMPERATURE", "R3_PRECIPITATION", "R3_WIND_SPEED", "R3_WIND_DIRECTION",
+            "R4_TEMPERATURE", "R4_PRECIPITATION", "R4_WIND_SPEED", "R4_WIND_DIRECTION", 
+            "COURSE_NAME", "COURSE_LOCATION", "PAR", "LENGTH", 
+            "PLAYER_NAME", 
+            "R1_SCORE", "R2_SCORE", "R3_SCORE", "R4_SCORE", "TOTAL_SCORE",
+            "POSITION", "EARNINGS", "FEDEX_PTS"])
         #tournament_information["R1_AVG_SCORE"] = r1_avg_score
         #tournament_information["R2_AVG_SCORE"] = r2_avg_score
         #tournament_information["R3_AVG_SCORE"] = r3_avg_score

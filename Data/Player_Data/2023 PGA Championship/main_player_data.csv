@@ -17,7 +17,7 @@ PLAYER_ID,PLAYER_NAME,TOURNAMENT_NAME,SG_PUTT,SG_OFF_THE_TEE,SG_APPROACH,SG_AROU
 22405,Justin Rose,2023 PGA Championship,1.112,-0.551,1.169,0.602
 36799,Stephan Jaeger,2023 PGA Championship,-0.829,0.296,0.703,-0.005
 34046,Jordan Spieth,2023 PGA Championship,-0.296,1.306,0.8,-0.534
-36871,Matt NeSmith,2023 PGA Championship,0.363,0.258,0.449,0.462
+36871,Matthew NeSmith,2023 PGA Championship,0.363,0.258,0.449,0.462
 50525,Collin Morikawa,2023 PGA Championship,0.1155,0.617,0.796,0.254
 34363,Tyrrell Hatton,2023 PGA Championship,0.9015,0.345,0.755,0.273
 30926,Chris Kirk,2023 PGA Championship,-0.05625,-0.237,0.498,0.631
@@ -54,7 +54,7 @@ PLAYER_ID,PLAYER_NAME,TOURNAMENT_NAME,SG_PUTT,SG_OFF_THE_TEE,SG_APPROACH,SG_AROU
 32369,Sihwan Kim,2023 PGA Championship,-0.4175,-1.197,0.622,0.395
 33974,Dean Burmester,2023 PGA Championship,0.4015,0.229,0.173,0.082
 34076,Joel Dahmen,2023 PGA Championship,-0.6465,-0.794,0.331,-0.076
-52453,Nicolai Hojgaard,2023 PGA Championship,0.85475,0.207,-0.514,-0.211
+52453,Nicolai Højgaard,2023 PGA Championship,0.85475,0.207,-0.514,-0.211
 30925,Dustin Johnson,2023 PGA Championship,0.37275,-0.042,-0.705,0.419
 29725,Tony Finau,2023 PGA Championship,-1.116,-0.603,-0.707,0.822
 33293,Thomas Pieters,2023 PGA Championship,1.18025,0.14,0.242,-0.3
@@ -71,7 +71,7 @@ PLAYER_ID,PLAYER_NAME,TOURNAMENT_NAME,SG_PUTT,SG_OFF_THE_TEE,SG_APPROACH,SG_AROU
 55789,Taylor Montgomery,2023 PGA Championship,0.24825,-0.853,-0.963,0.651
 39977,Max Homa,2023 PGA Championship,1.03675,0.371,-0.28,-0.41
 48119,Ben Taylor,2023 PGA Championship,0.1025,-0.874,-0.506,0.587
-29670,Pablo Larrazabal,2023 PGA Championship,0.467,-1.047,-1.368,0.937
+29670,Pablo Larrazábal,2023 PGA Championship,0.467,-1.047,-1.368,0.937
 55893,Sam Stevens,2023 PGA Championship,-0.1455,0.23,-0.705,-0.441
 49947,Taylor Moore,2023 PGA Championship,0.017,-0.165,-0.751,0.161
 35778,Kazuki Higa,2023 PGA Championship,-0.6355,-0.737,-1.057,-0.269

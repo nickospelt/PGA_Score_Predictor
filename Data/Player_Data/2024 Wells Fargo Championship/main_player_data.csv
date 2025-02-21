@@ -2,7 +2,7 @@ PLAYER_ID,PLAYER_NAME,TOURNAMENT_NAME,SG_PUTT,SG_OFF_THE_TEE,SG_APPROACH,SG_AROU
 28237,Rory McIlroy,2024 Wells Fargo Championship,1.0705,1.529,1.562,0.82
 48081,Xander Schauffele,2024 Wells Fargo Championship,0.233,1.414,1.869,0.216
 37455,Si Woo Kim,2024 Wells Fargo Championship,-1.28775,0.552,1.369,0.348
-28252,Seamus Power,2024 Wells Fargo Championship,-0.9395,0.371,1.717,-0.167
+28252,Séamus Power,2024 Wells Fargo Championship,-0.9395,0.371,1.717,-0.167
 39997,Corey Conners,2024 Wells Fargo Championship,-0.6335,0.682,1.753,-0.57
 25900,Lucas Glover,2024 Wells Fargo Championship,-0.7125,0.216,0.542,0.936
 27349,Alex Noren,2024 Wells Fargo Championship,-0.9815,0.118,0.211,1.134
@@ -49,7 +49,7 @@ PLAYER_ID,PLAYER_NAME,TOURNAMENT_NAME,SG_PUTT,SG_OFF_THE_TEE,SG_APPROACH,SG_AROU
 27644,Brian Harman,2024 Wells Fargo Championship,-0.2915,-1.203,0.383,0.092
 32102,Rickie Fowler,2024 Wells Fargo Championship,-0.0165,-0.187,-0.372,-0.193
 31646,Emiliano Grillo,2024 Wells Fargo Championship,-1.515,-0.121,0.439,-1.072
-40098,Matthew Fitzpatrick,2024 Wells Fargo Championship,-0.51225,-0.09,-1.055,0.389
+40098,Matt Fitzpatrick,2024 Wells Fargo Championship,-0.51225,-0.09,-1.055,0.389
 34099,Harris English,2024 Wells Fargo Championship,0.7795,-0.152,-0.453,-0.193
 51634,Sahith Theegala,2024 Wells Fargo Championship,-0.35675,0.435,0.163,-1.509
 29725,Tony Finau,2024 Wells Fargo Championship,-0.3545,-0.227,-0.595,-0.092
