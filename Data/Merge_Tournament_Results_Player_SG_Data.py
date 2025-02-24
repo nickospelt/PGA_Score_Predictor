@@ -97,32 +97,35 @@ def aggregate_player_sg_and_tournament_data():
         # load and clean all player statistics (Commented out statistics not longer being used)
         player_data_path = os.path.join(main_dir, f"Player_Data/{tournament_result_csv.replace('.csv', '')}/Final Player Stats")
         
+        # If a tournament doesn't have strokes gained data (British Open and Masters) then still want to get the strokes data so create empty player data frame
+        # If have tee to green strokes data then have strokes gained put
+        strokes_gained_f = 1
         try:
             SG_T2G_df = pd.read_csv(f'{player_data_path}/SG_T2G.csv')
         except FileNotFoundError:
-            continue
-
-        try:
+            strokes_gained_f = 0
+        if strokes_gained_f == 1:
             SG_PUTT_df = pd.read_csv(f'{player_data_path}/SG_PUTT.csv')
-        except FileNotFoundError:
-            continue
 
-        # merge the player statistic dataframes together and format the final dataframe
-        main_player_data_df = pd.merge(SG_T2G_df, SG_PUTT_df, on='PLAYER_ID', how='inner')
-        main_player_data_df = main_player_data_df[['PLAYER_ID', 'PLAYER_x', 'TOTAL SG:PUTTING', 'SG:OTT', 'SG:APR', 'SG:ARG']].rename(columns={'PLAYER_x': 'PLAYER_NAME', 'TOTAL SG:PUTTING': 'SG_PUTT', 'SG:OTT': 'SG_OFF_THE_TEE', 'SG:APR': 'SG_APPROACH', 'SG:ARG': 'SG_AROUND_THE_GREEN'})
-        main_player_data_df['SG_PUTT'] = main_player_data_df['SG_PUTT'] / 4
+            main_player_data_df = pd.merge(SG_T2G_df, SG_PUTT_df, on='PLAYER_ID', how='inner')
+            main_player_data_df = main_player_data_df[['PLAYER_ID', 'PLAYER_x', 'TOTAL SG:PUTTING', 'SG:OTT', 'SG:APR', 'SG:ARG']].rename(columns={'PLAYER_x': 'PLAYER_NAME', 'TOTAL SG:PUTTING': 'SG_PUTT', 'SG:OTT': 'SG_OFF_THE_TEE', 'SG:APR': 'SG_APPROACH', 'SG:ARG': 'SG_AROUND_THE_GREEN'})
+            main_player_data_df['SG_PUTT'] = main_player_data_df['SG_PUTT'] / 4
 
-        main_player_data_df['TOURNAMENT_NAME'] = tournament_result_csv.replace('.csv', '')
-        main_player_data_df['PLAYER_NAME'] = main_player_data_df.apply(lambda row: map_player_names(row['PLAYER_NAME'], name_mappings), axis=1)
-        main_player_data_df = main_player_data_df[['PLAYER_ID', 'PLAYER_NAME', 'TOURNAMENT_NAME', 'SG_PUTT', 'SG_OFF_THE_TEE', 'SG_APPROACH', 'SG_AROUND_THE_GREEN']]
+            main_player_data_df['TOURNAMENT_NAME'] = tournament_result_csv.replace('.csv', '')
+            main_player_data_df['PLAYER_NAME'] = main_player_data_df.apply(lambda row: map_player_names(row['PLAYER_NAME'], name_mappings), axis=1)
+            main_player_data_df = main_player_data_df[['PLAYER_ID', 'PLAYER_NAME', 'TOURNAMENT_NAME', 'SG_PUTT', 'SG_OFF_THE_TEE', 'SG_APPROACH', 'SG_AROUND_THE_GREEN']]
+        else:
+            player_data_columns = ['PLAYER_ID','PLAYER_NAME','TOURNAMENT_NAME','SG_PUTT','SG_OFF_THE_TEE','SG_APPROACH','SG_AROUND_THE_GREEN']
+            main_player_data_df = pd.DataFrame(columns=player_data_columns)
 
         # print and save the aggregated player data for the respective tournament
         print(f"{tournament_result_csv.replace('.csv', '')} Player Stats Dataframe:")
         print(main_player_data_df)
         print('\n')
+
+        # merge the player statistic dataframes together and format the final dataframe
         player_data_path = os.path.join(main_dir, f"Player_Data/{tournament_result_csv.replace('.csv', '')}")
         main_player_data_df.to_csv(f"{os.path.join(player_data_path, 'main_player_data.csv')}", index=False)
-
         tournament_player_data_df = pd.merge(main_player_data_df, tournament_result_df, on=['PLAYER_NAME', 'TOURNAMENT_NAME'], how='outer').sort_values(by='TOTAL_SCORE', ascending=False).reset_index(drop=True)
         tournament_player_data_df = tournament_player_data_df[["TOURNAMENT_NAME", "TOURNAMENT_DATE", 
             "ELEVATION", 
