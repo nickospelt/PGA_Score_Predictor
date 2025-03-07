@@ -142,7 +142,7 @@ def scrape_tournament_results():
                 fedex_points = player_info[10].text
 
             # Aggregate information of for each player in tournament
-            if player_score != 'WD' and player_score != 'MDF' and player_score != 'DQ':
+            if player_score != 'WD' and player_score != 'MDF' and player_score != 'DQ' and player_score != 'DNS':
 
                 # If they didn't make the cut then no scores in rounds 3 and 4
                 if r3_score == '--':
