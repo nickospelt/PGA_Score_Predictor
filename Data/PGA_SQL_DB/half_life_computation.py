@@ -20,9 +20,8 @@ def calc_weighted_avgs(df, tournament_name, player_name, tournament_date, featur
     prev_rounds_df = df.loc[(df['PLAYER_NAME'] == player_name) & (df['TOURNAMENT_DATE'] < tournament_date)].copy()
 
     # determine if eligible rows
-    # TODO: still want to return player names and such
     if prev_rounds_df.shape[0] == 0:
-        return None
+        return tournament_name, player_name, tournament_date, None
     
     # Weighting by how recent data is
     prev_rounds_df['DAYS_SINCE'] = prev_rounds_df.apply(lambda row: compute_days_between(row['TOURNAMENT_DATE'], tournament_date), axis=1)
@@ -35,24 +34,36 @@ def calc_weighted_avgs(df, tournament_name, player_name, tournament_date, featur
     weight_sum_HL_200 = prev_rounds_df['HL_200_WEIGHT'].sum()
     
     # generate half life values based on previous rounds
+    # TODO: Spot check how the ewa metrics are being calculated.
+        # May need to calculate the weight sums for each feature once filter out null rows for that metric.
+        # For example, the HL_50_SG_P value in EWA_METRICS appears to be dilluted over time for Aaron Baddeley but there was only one 
+        # Use Aaron Baddeley comparing against adj metrics and ewa metrics specifically for 2017 memorial.
     hl_values = []
     for feature in features:
-        fifty = "HL_50_" + feature
-        hundred = "HL_100_" + feature
-        two_hundred = "HL_200_" + feature
+        poss_values = prev_rounds_df[feature].unique().tolist()
 
-        # compute weighted feature
-        prev_rounds_df[fifty] = prev_rounds_df['HL_50_WEIGHT'] * prev_rounds_df[feature]
-        prev_rounds_df[hundred] = prev_rounds_df['HL_100_WEIGHT'] * prev_rounds_df[feature]
-        prev_rounds_df[two_hundred] = prev_rounds_df['HL_200_WEIGHT'] * prev_rounds_df[feature]
+        # if no previous values for the metric then null for all half-lifes
+        if len(poss_values) == 1 and np.isnan(poss_values[0]):
+            hl_values.append(None)
+            hl_values.append(None)
+            hl_values.append(None)
+        else:
+            fifty = "HL_50_" + feature
+            hundred = "HL_100_" + feature
+            two_hundred = "HL_200_" + feature
 
-        fifty = prev_rounds_df[fifty].sum() / weight_sum_HL_50
-        hundred = prev_rounds_df[hundred].sum() / weight_sum_HL_100
-        two_hundred = prev_rounds_df[two_hundred].sum() / weight_sum_HL_200
+            # compute weighted feature
+            prev_rounds_df[fifty] = prev_rounds_df['HL_50_WEIGHT'] * prev_rounds_df[feature]
+            prev_rounds_df[hundred] = prev_rounds_df['HL_100_WEIGHT'] * prev_rounds_df[feature]
+            prev_rounds_df[two_hundred] = prev_rounds_df['HL_200_WEIGHT'] * prev_rounds_df[feature]
 
-        hl_values.append(fifty)
-        hl_values.append(hundred)
-        hl_values.append(two_hundred)
+            fifty = prev_rounds_df[fifty].sum() / weight_sum_HL_50
+            hundred = prev_rounds_df[hundred].sum() / weight_sum_HL_100
+            two_hundred = prev_rounds_df[two_hundred].sum() / weight_sum_HL_200
+
+            hl_values.append(fifty)
+            hl_values.append(hundred)
+            hl_values.append(two_hundred)
 
     return tournament_name, player_name, tournament_date, hl_values[0], hl_values[1], hl_values[2], hl_values[3], hl_values[4], hl_values[5], hl_values[6], hl_values[7], hl_values[8], hl_values[9], hl_values[10], hl_values[11], hl_values[12], hl_values[13], hl_values[14], hl_values[15], hl_values[16], hl_values[17], hl_values[18], hl_values[19],  hl_values[20], hl_values[21], hl_values[22], hl_values[23]
 
