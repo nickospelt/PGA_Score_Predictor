@@ -71,12 +71,12 @@ def calc_weighted_avgs(df, tournament_name, player_name, tournament_date, featur
     return tournament_name, player_name, tournament_date, hl_values[0], hl_values[1], hl_values[2], hl_values[3], hl_values[4], hl_values[5], hl_values[6], hl_values[7], hl_values[8], hl_values[9], hl_values[10], hl_values[11], hl_values[12], hl_values[13], hl_values[14], hl_values[15], hl_values[16], hl_values[17], hl_values[18], hl_values[19],  hl_values[20], hl_values[21], hl_values[22], hl_values[23]
 
 # for tournaments within the past 12 months, compute the players finish statistics
-def calc_yearly_finish_totals(df, player_name, tournament_name, tournament_date, finish):
+def calc_yearly_finish_totals(df, player_name, tournament_name, tournament_date, finish, position):
     prev_year_date = tournament_date - relativedelta(days=369)
     prev_year_rounds_df = df[['TOURNAMENT_DATE', 'EARNINGS', 'FEDEX_PTS', 'FINISH']].loc[(df['PLAYER_NAME'] == player_name) & (df['TOURNAMENT_DATE'] < tournament_date) & (df['TOURNAMENT_DATE'] >= prev_year_date)].copy()
 
     if prev_year_rounds_df.shape[0] == 0:
-        return player_name, tournament_name, finish, 0, 0, 0, 0, 0, 0, 0, 0
+        return player_name, tournament_name, finish, position, 0, 0, 0, 0, 0, 0, 0, 0
 
     # all metrics at an per apperance level
     apperances = prev_year_rounds_df.shape[0]
@@ -88,12 +88,12 @@ def calc_yearly_finish_totals(df, player_name, tournament_name, tournament_date,
     top_twenty = ((prev_year_rounds_df['FINISH'] == 'WIN') | (prev_year_rounds_df['FINISH'] == 'TOP 5') | (prev_year_rounds_df['FINISH'] == 'TOP 10') | (prev_year_rounds_df['FINISH'] == 'TOP 20')).sum() / apperances
     made_cuts = ((prev_year_rounds_df['FINISH'] == 'WIN') | (prev_year_rounds_df['FINISH'] == 'TOP 5') | (prev_year_rounds_df['FINISH'] == 'TOP 10') | (prev_year_rounds_df['FINISH'] == 'TOP 20') | (prev_year_rounds_df['FINISH'] == 'MADE CUT')).sum() / apperances
 
-    return player_name, tournament_name, finish, earnings, fed_ex_pts, wins, top_five, top_ten, top_twenty, made_cuts, apperances
+    return player_name, tournament_name, finish, position, earnings, fed_ex_pts, wins, top_five, top_ten, top_twenty, made_cuts, apperances
 
 # main function to control control
 if __name__ == "__main__":
     # connect to the database
-    conn = sqlite3.connect('/Users/nickospelt/Documents/App_Projects/PGA_Score_Predictor/Data/PGA_SQL_DB/PGA.db')
+    conn = sqlite3.connect('/Users/nickospelt/Documents/App_Projects/PGA_Tournament_Winner/Data/PGA_SQL_DB/PGA.db')
     
     # pull adjusted metrics
     adj_metrics_df = pd.read_sql_query("SELECT * FROM ADJ_METRICS", conn)
@@ -117,11 +117,11 @@ if __name__ == "__main__":
 
     # compute trailing 12 month finish totals
     finish_df = pd.DataFrame()
-    finish_df[['PLAYER_NAME', 'TOURNAMENT_NAME', 'FINISH',
+    finish_df[['PLAYER_NAME', 'TOURNAMENT_NAME', 'FINISH', 'POSITION',
         'T12_EARNINGS', 'T12_FED_EX_PTS', 
         'T12_WINS', 'T12_TOP_5', 'T12_TOP_10', 'T12_TOP_20', 'T12_MADE_CUTS', 'T12_APPERANCES']] = adj_metrics_df.apply(
         lambda row: pd.Series(
-            calc_yearly_finish_totals(adj_metrics_df, row['PLAYER_NAME'], row['TOURNAMENT_NAME'], row['TOURNAMENT_DATE'], row['FINISH'])), axis=1)
+            calc_yearly_finish_totals(adj_metrics_df, row['PLAYER_NAME'], row['TOURNAMENT_NAME'], row['TOURNAMENT_DATE'], row['FINISH'], row['POSITION'])), axis=1)
 
     # save to a table in database
     ewa_metrics_df = pd.merge(ewa_metrics_df, finish_df, on=['PLAYER_NAME', 'TOURNAMENT_NAME'], how='inner').sort_values(by=['TOURNAMENT_NAME', 'PLAYER_NAME'], ascending=[False, True])

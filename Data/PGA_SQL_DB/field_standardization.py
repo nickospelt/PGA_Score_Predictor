@@ -22,16 +22,24 @@ def standardize_feature_distributions(ewa_metrics_df, tournament_df, tournament_
 
         standardized_feature = 0
         if not pd.isnull(orig_val):
-            mean = tournament_df.loc[tournament_name, (feature, 'mean')]
-            std = tournament_df.loc[tournament_name, (feature, 'std')]
+            if feature != 'POSITION':
+                mean = tournament_df.loc[tournament_name, (feature, 'mean')]
+                std = tournament_df.loc[tournament_name, (feature, 'std')]
 
-            if feature[:3] != "T12" and std == 0:
-                print(tournament_name, feature)
-                raise ValueError("Zero STD")
-            elif std == 0:
-                standardized_feature = orig_val
+                if feature[:3] != "T12" and std == 0:
+                    print(tournament_name, feature)
+                    raise ValueError("Zero STD")
+                elif std == 0:
+                    standardized_feature = orig_val
+                else:
+                    standardized_feature = (orig_val - mean) / std
             else:
-                standardized_feature = (orig_val - mean) / std
+                min_val = tournament_df.loc[tournament_name, (feature, 'min')]
+                max_val = tournament_df.loc[tournament_name, (feature, 'max')]
+                
+                standardized_feature = (orig_val - min_val) / (max_val - min_val)
+        elif feature == 'POSITION':
+            standardized_feature = -1
 
         results.append(standardized_feature)
     
@@ -40,14 +48,15 @@ def standardize_feature_distributions(ewa_metrics_df, tournament_df, tournament_
 # main function to control control
 if __name__ == "__main__":
     # connect to the database
-    conn = sqlite3.connect('/Users/nickospelt/Documents/App_Projects/PGA_Score_Predictor/Data/PGA_SQL_DB/PGA.db')
+    conn = sqlite3.connect('/Users/nickospelt/Documents/App_Projects/PGA_Tournament_Winner/Data/PGA_SQL_DB/PGA.db')
     
     # pull ewa metrics
     ewa_metrics_df = pd.read_sql_query("SELECT * FROM EWA_METRICS", conn)
 
     # features
     # Features Want to Standardize
-    features = ['HL_50_SG_P', 'HL_100_SG_P', 'HL_200_SG_P',
+    features = ['POSITION',
+        'HL_50_SG_P', 'HL_100_SG_P', 'HL_200_SG_P',
         'HL_50_SG_OTT', 'HL_100_SG_OTT', 'HL_200_SG_OTT',
         'HL_50_SG_APR', 'HL_100_SG_APR', 'HL_200_SG_APR',
         'HL_50_SG_ATG', 'HL_100_SG_ATG', 'HL_200_SG_ATG',
@@ -61,10 +70,10 @@ if __name__ == "__main__":
     
     # calculate average and std for all features for each tournament
     tournament_df = pd.DataFrame()
-    tournament_df = ewa_metrics_df.groupby('TOURNAMENT_NAME')[features].agg(['mean', 'std'])
+    tournament_df = ewa_metrics_df.groupby('TOURNAMENT_NAME')[features].agg(['mean', 'std', 'min', 'max'])
 
     standardized_metrics_df = pd.DataFrame()
-    standardized_metrics_df[['TOURNAMENT_NAME', 'PLAYER_NAME', 'TOURNAMENT_DATE', 'FINISH',
+    standardized_metrics_df[['TOURNAMENT_NAME', 'PLAYER_NAME', 'TOURNAMENT_DATE', 'FINISH', 'STANDARD_POSITION',
         'HL_50_SG_P', 'HL_100_SG_P', 'HL_200_SG_P',
         'HL_50_SG_OTT', 'HL_100_SG_OTT', 'HL_200_SG_OTT',
         'HL_50_SG_APR', 'HL_100_SG_APR', 'HL_200_SG_APR',
